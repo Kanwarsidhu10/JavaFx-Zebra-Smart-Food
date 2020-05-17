@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="371.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AddOrderController">
+   <children>
+      <JFXTextField fx:id="txtId" layoutX="31.0" layoutY="29.0" onAction="#getById" prefHeight="25.0" prefWidth="142.0" promptText="Enter product ID" />
+      <JFXRadioButton fx:id="rbAdd" layoutX="232.0" layoutY="29.0" onAction="#rbaAddClick" text="Add" />
+      <JFXRadioButton fx:id="rbUpdateDelete" layoutX="232.0" layoutY="54.0" onAction="#rbUpdateDeleteClick" text="Update/Delete" />
+      <JFXTextField fx:id="txtDateoforder" layoutX="31.0" layoutY="91.0" prefHeight="25.0" prefWidth="142.0" promptText="Date of order" />
+      <JFXTextField fx:id="txtDateofdelievery" layoutX="195.0" layoutY="91.0" prefHeight="25.0" prefWidth="142.0" promptText="Date of delievery" />
+      <JFXTextField fx:id="txtProductId" layoutX="31.0" layoutY="175.0" prefHeight="25.0" prefWidth="142.0" promptText="Product ID" />
+      <JFXTextField fx:id="txtQuantity" layoutX="31.0" layoutY="263.0" prefHeight="25.0" prefWidth="142.0" promptText="Quantity" />
+      <JFXTextField fx:id="txtAmount" layoutX="195.0" layoutY="263.0" prefHeight="25.0" prefWidth="142.0" promptText="Amount" />
+      <JFXTextField fx:id="txtCustomerId" layoutX="195.0" layoutY="175.0" prefHeight="25.0" prefWidth="142.0" promptText="Customer ID" />
+      <JFXButton fx:id="btnAdd" layoutX="31.0" layoutY="369.0" onAction="#addOrder" prefHeight="25.0" prefWidth="307.0" text="Add" />
+      <JFXButton fx:id="btnDelete" layoutX="185.0" layoutY="344.0" onAction="#deleteOrder" prefHeight="25.0" prefWidth="163.0" text="Delete" />
+      <JFXButton fx:id="btnUpdate" layoutX="21.0" layoutY="344.0" onAction="#updateOrder" prefHeight="25.0" prefWidth="163.0" text="Update" />
+   </children>
+</AnchorPane>

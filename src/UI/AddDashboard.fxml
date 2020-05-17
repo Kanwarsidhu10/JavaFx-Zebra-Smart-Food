@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AddDashboardController">
+   <children>
+      <ImageView fitHeight="491.0" fitWidth="794.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/snehk_000/Desktop/Zebra/pics/orange%20background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="386.0" fitWidth="601.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/snehk_000/Desktop/Zebra/pics/orange%20background%20-%20Copy.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnAddCustomer" layoutX="213.0" layoutY="193.0" onAction="#customerClick" prefHeight="25.0" prefWidth="175.0" text="Add Customer" textFill="#c56211">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnAddProduct" layoutX="213.0" layoutY="135.0" onAction="#productClick" prefHeight="25.0" prefWidth="175.0" text="Add Product" textFill="#c56211">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnAddOrder" layoutX="213.0" layoutY="319.0" onAction="#orderClick" prefHeight="25.0" prefWidth="175.0" text="Add Order" textFill="#c56211">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnAddQuantity" layoutX="213.0" layoutY="257.0" onAction="#quantityClick" prefHeight="25.0" prefWidth="175.0" text="Add Quantity" textFill="#c56211">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="6.0" layoutY="3.0" prefHeight="74.0" prefWidth="297.0" text=" Dashboard" textFill="#f0dfcf">
+         <font>
+            <Font name="System Bold Italic" size="51.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="219.0" layoutY="375.0" onAction="#buy" prefHeight="84.0" prefWidth="163.0" text="BUY" textFill="#c56211">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

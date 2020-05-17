@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AddProductController">
+   <children>
+      <JFXTextField fx:id="txtId" layoutX="190.0" layoutY="55.0" onAction="#getById" promptText="Enter Product ID" />
+      <JFXTextField fx:id="txtCode" layoutX="55.0" layoutY="128.0" promptText="Code" />
+      <JFXTextField fx:id="txtName" layoutX="325.0" layoutY="128.0" promptText="Name" />
+      <JFXComboBox fx:id="cbCategory" layoutX="55.0" layoutY="225.0" prefHeight="25.0" prefWidth="135.0" promptText="Category" />
+      <JFXTextField fx:id="txtAmount" layoutX="325.0" layoutY="225.0" promptText="Amount" />
+      <JFXRadioButton fx:id="rbAdd" layoutX="426.0" layoutY="38.0" onAction="#rbAddClick" text="Add" />
+      <JFXRadioButton fx:id="rbUpdateDelete" layoutX="426.0" layoutY="59.0" onAction="#rbUpdateDelete" text="Update/Delete" />
+      <JFXTextArea fx:id="txtDescription" layoutX="55.0" layoutY="296.0" prefHeight="176.0" prefWidth="480.0" promptText="DESCRIPTION" />
+      <JFXButton fx:id="btnUpdate" layoutX="14.0" layoutY="496.0" onAction="#addProduct" prefHeight="25.0" prefWidth="257.0" text="Update" />
+      <JFXButton fx:id="btnDelete" layoutX="300.0" layoutY="496.0" onAction="#deleteProduct" prefHeight="25.0" prefWidth="257.0" text="Delete" />
+      <JFXButton fx:id="btnAdd" layoutX="5.0" layoutY="521.0" onAction="#addProduct" prefHeight="25.0" prefWidth="526.0" text="Add" />
+   </children>
+</AnchorPane>

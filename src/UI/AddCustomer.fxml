@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.AddCustomerController">
+   <children>
+      <JFXRadioButton fx:id="rbAdd" layoutX="458.0" layoutY="25.0" onAction="#rbAddClick" text="Add" />
+      <JFXRadioButton fx:id="rbUpdateDelete" layoutX="458.0" layoutY="53.0" onAction="#rbUpdateDeleteClick" text="Update/Delete" />
+      <JFXTextField fx:id="txtId" layoutX="233.0" layoutY="30.0" onAction="#getById" promptText="Enter Product ID" />
+      <JFXTextField fx:id="txtMobile_number" layoutX="368.0" layoutY="89.0" promptText="Mobile Number" />
+      <JFXTextField fx:id="txtName" layoutX="98.0" layoutY="89.0" promptText="Name" />
+      <JFXTextArea fx:id="txtAddress" layoutX="94.0" layoutY="145.0" prefHeight="89.0" prefWidth="206.0" promptText="Primary Address :-" />
+      <JFXTextField fx:id="txtUsername" layoutX="391.0" layoutY="154.0" promptText="Username" />
+      <JFXTextField fx:id="txtPassword" layoutX="391.0" layoutY="209.0" promptText="Password" />
+      <JFXTextField fx:id="txtEmail" layoutX="197.0" layoutY="271.0" prefHeight="25.0" prefWidth="206.0" promptText="E-Mail" />
+      <JFXButton fx:id="btnAdd" layoutX="15.0" layoutY="404.0" onAction="#addCustomer" prefHeight="25.0" prefWidth="571.0" text="Add" />
+      <JFXButton fx:id="btnUpdate" layoutX="15.0" layoutY="379.0" onAction="#updateCustomer" prefHeight="25.0" prefWidth="284.0" text="Update" />
+      <JFXButton fx:id="btnDelete" layoutX="301.0" layoutY="379.0" onAction="#deleteCustomer" prefHeight="25.0" prefWidth="284.0" text="Delete" />
+   </children>
+</AnchorPane>
